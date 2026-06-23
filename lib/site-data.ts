@@ -5,22 +5,23 @@ import {
   Database,
   FileSpreadsheet,
   LineChart,
-  Microscope,
   Network,
   Presentation,
-  Stethoscope
+  Stethoscope,
+  Users
 } from "lucide-react";
 
 export const profile = {
-  name: "Your Name",
+  name: "Jo (Yaozu) Liang",
   university: "University of Toronto",
   role: "Clinical Data Science Intern",
   headline:
-    "Aspiring Clinical Data Scientist with interests in Biostatistics, Clinical Trials, and Data-Driven Drug Development.",
-  email: "your.email@example.com",
-  linkedin: "https://www.linkedin.com/in/your-profile",
-  github: "https://github.com/your-username",
-  resume: "/resume/resume-placeholder.pdf"
+    "Aspiring Clinical Data Scientist focused on oncology trials, survival analysis, statistical programming, and data-driven drug development.",
+  email: "yaozu.liang@mail.utoronto.ca",
+  phone: "+1 437-441-6060",
+  linkedin: "https://www.linkedin.com/in/jo-yaozu-liang",
+  github: "https://github.com/jooleung",
+  resume: "/resume/Y_Liang_Rusume_June26_JnJ.pdf"
 };
 
 export const navItems = [
@@ -33,69 +34,70 @@ export const navItems = [
 ];
 
 export const focusAreas = [
-  "Biostatistics",
-  "Clinical Trials",
-  "Real-World Data",
+  "Oncology Endpoints",
   "Survival Analysis",
-  "Oncology",
-  "Data-Driven Drug Development"
+  "Clinical Trial Analytics",
+  "Real-World Data",
+  "Statistical Programming",
+  "Regulatory Evidence"
 ];
 
 export const aboutHighlights = [
   {
     title: "Education",
     body:
-      "Undergraduate student at the University of Toronto majoring in Quantitative Biology with a Genome Biology minor and applied data science focus."
+      "HBSc candidate at the University of Toronto in Quantitative Biology, Genome Biology, and Applied Data Science, ASIP co-op stream, expected June 2028."
   },
   {
-    title: "Academic Interests",
+    title: "Global Academic Training",
     body:
-      "Interested in statistical modeling, clinical trial methodology, oncology outcomes research, genomic data, and real-world evidence."
+      "Completed Berkeley Global Access coursework at the University of California, Berkeley before continuing biomedical and data science training in Toronto."
   },
   {
-    title: "Career Direction",
+    title: "Clinical Interests",
     body:
-      "Preparing for clinical data science, biostatistics, and clinical development roles across pharmaceutical, biotechnology, and clinical research organizations."
+      "Focused on oncology efficacy endpoints, Kaplan-Meier estimation, Cox proportional hazards models, RMST, endpoint selection, and trial interpretation."
   },
   {
     title: "Working Style",
     body:
-      "Combines biological context, statistical reasoning, and reproducible analysis workflows to support decision-making in drug development."
+      "Builds reproducible R and SAS workflows, clear summary tables, and executive-ready data stories for clinical and operational decision-making."
   }
 ];
 
 export const experiences = [
   {
-    title: "Clinical Data Science Internship",
-    organization: "Clinical Research / Health Data Environment",
-    period: "Current",
+    title: "Clinical Data Science Intern",
+    organization: "Akeso Biopharma Inc. - Guangzhou, China",
+    period: "May 2026 - Aug 2026",
     icon: BriefcaseMedical,
     bullets: [
-      "Support clinical data review, data quality checks, and exploratory analysis workflows.",
-      "Apply statistical programming and visualization to summarize patient-level and study-level trends.",
-      "Collaborate with cross-functional stakeholders to translate research questions into analytical outputs."
+      "Applied Kaplan-Meier estimation, Cox proportional hazards models, and proportional hazards diagnostics to oncology trial case studies using R and SAS.",
+      "Developed reproducible R and SAS workflows for clinical data exploration, survival endpoint analysis, and statistical output generation.",
+      "Evaluated oncology efficacy endpoints including OS, PFS, ORR, and DOR, comparing their clinical and regulatory implications across trial settings.",
+      "Explored treatment-effect estimation under non-proportional hazards scenarios using RMST and MaxCombo methodologies."
     ]
   },
   {
-    title: "Data Analysis Experience",
-    organization: "Academic and Applied Projects",
-    period: "University of Toronto",
+    title: "Development and Executive Associate Intern",
+    organization: "Zhongyuan Petroleum Products Co., Ltd. - Guangdong, China",
+    period: "Jun 2024 - Sep 2024",
     icon: BarChart3,
     bullets: [
-      "Designed reproducible analyses using R, Python, SQL, and spreadsheet-based validation.",
-      "Developed interpretable visual summaries for biological, clinical, and observational datasets.",
-      "Practiced clear documentation for assumptions, methods, outputs, and analytical limitations."
+      "Analyzed multi-source sales and customer datasets to support operational strategy decisions.",
+      "Developed automated reporting workflows using Excel, SQL, and Power BI to improve recurring analysis efficiency.",
+      "Prepared visualizations and performance summaries for management reviews and executive decision-making."
     ]
   },
   {
-    title: "Biomedical Research Foundation",
-    organization: "Quantitative Biology and Genome Biology Training",
-    period: "Undergraduate",
-    icon: Microscope,
+    title: "Leadership and Community Experience",
+    organization: "Youth Programs and Community Support",
+    period: "Ongoing",
+    icon: Users,
     bullets: [
-      "Built a foundation in molecular biology, genomics, statistics, and computational analysis.",
-      "Studied how quantitative methods can help evaluate treatment response and disease progression.",
-      "Focused on applications relevant to oncology, clinical trials, and translational medicine."
+      "Supported tennis instruction, progress assessment, and parent communication for children aged 5-10.",
+      "Provided logistical assistance and translation services for local residents during the pandemic.",
+      "Strengthened cross-functional communication across scientific, operational, and community-facing contexts."
     ]
   }
 ];
@@ -104,55 +106,55 @@ export const projects = [
   {
     title: "Survival Analysis",
     summary:
-      "Template project for time-to-event endpoints, censoring patterns, median survival, and interpretable clinical summaries.",
+      "Time-to-event project space for censoring patterns, median survival, log-rank tests, RMST, and interpretable oncology summaries.",
     image: "/projects/survival-analysis.svg",
     tags: ["R", "Survival", "Oncology"],
-    github: "https://github.com/your-username/survival-analysis",
+    github: "https://github.com/jooleung/survival-analysis",
     report: "/projects/survival-analysis-report.pdf"
   },
   {
     title: "Kaplan-Meier Analysis",
     summary:
-      "Project area for Kaplan-Meier curves, risk tables, stratified cohorts, and confidence interval interpretation.",
+      "Kaplan-Meier curves, risk tables, stratified cohorts, and confidence interval interpretation for clinical endpoint reporting.",
     image: "/projects/kaplan-meier-analysis.svg",
     tags: ["Kaplan-Meier", "R", "Visualization"],
-    github: "https://github.com/your-username/kaplan-meier-analysis",
+    github: "https://github.com/jooleung/kaplan-meier-analysis",
     report: "/projects/kaplan-meier-report.pdf"
   },
   {
     title: "Cox Regression",
     summary:
-      "Placeholder for proportional hazards modeling, covariate adjustment, forest plots, and model diagnostics.",
+      "Proportional hazards modeling, covariate adjustment, forest plots, diagnostics, and treatment-effect interpretation.",
     image: "/projects/cox-regression.svg",
     tags: ["Cox PH", "Statistics", "Clinical"],
-    github: "https://github.com/your-username/cox-regression",
+    github: "https://github.com/jooleung/cox-regression",
     report: "/projects/cox-regression-report.pdf"
   },
   {
     title: "SAP Development",
     summary:
-      "Project slot for Statistical Analysis Plan structure, endpoint definitions, estimands, and mock shell outputs.",
+      "Statistical Analysis Plan structure, endpoint definitions, estimands, analysis populations, and mock shell outputs.",
     image: "/projects/sap-development.svg",
     tags: ["SAP", "Trial Design", "SAS"],
-    github: "https://github.com/your-username/sap-development",
+    github: "https://github.com/jooleung/sap-development",
     report: "/projects/sap-development-report.pdf"
   },
   {
     title: "Clinical Trial Analytics",
     summary:
-      "Analytics concept for enrollment, protocol deviations, adverse events, data review, and study operations insights.",
+      "Analytics concept for efficacy endpoints, data review, formatted summary tables, deviations, and study operations insights.",
     image: "/projects/clinical-trial-analytics.svg",
     tags: ["Clinical Trials", "Dashboards", "SQL"],
-    github: "https://github.com/your-username/clinical-trial-analytics",
+    github: "https://github.com/jooleung/clinical-trial-analytics",
     report: "/projects/clinical-trial-analytics-report.pdf"
   },
   {
     title: "Real-World Data Studies",
     summary:
-      "Placeholder for observational cohort construction, treatment patterns, outcomes analysis, and real-world evidence.",
+      "Observational cohort construction, treatment patterns, outcomes analysis, data interpretation, and real-world evidence.",
     image: "/projects/real-world-data.svg",
     tags: ["RWD", "Cohorts", "Power BI"],
-    github: "https://github.com/your-username/real-world-data",
+    github: "https://github.com/jooleung/real-world-data",
     report: "/projects/real-world-data-report.pdf"
   }
 ];
@@ -161,27 +163,27 @@ export const skillGroups = [
   {
     title: "Statistics",
     icon: LineChart,
-    skills: ["Survival Analysis", "Cox Regression", "Kaplan-Meier Analysis", "Hypothesis Testing", "Regression Modeling"]
+    skills: ["Survival Analysis", "Kaplan-Meier", "Log-rank Test", "Cox PH", "RMST", "Hypothesis Testing", "Regression Modeling"]
   },
   {
     title: "Clinical Research",
     icon: Stethoscope,
-    skills: ["Clinical Trial Design", "Protocol Review", "SAP Concepts", "Oncology Endpoints", "Real-World Evidence"]
+    skills: ["Oncology Endpoints", "OS", "PFS", "ORR", "DOR", "FDA Guidance Review", "SAP Concepts"]
   },
   {
     title: "Programming",
     icon: Database,
-    skills: ["R", "SAS", "SQL", "Python", "Excel", "Reproducible Workflows"]
+    skills: ["R", "SAS", "SQL", "Python", "Excel", "Power BI", "Reproducible Workflows"]
   },
   {
     title: "Data Visualization",
     icon: Presentation,
-    skills: ["Power BI", "ggplot2", "Clinical Dashboards", "Data Storytelling", "Tables and Listings"]
+    skills: ["ggplot2", "survminer", "Clinical Dashboards", "Formatted Tables", "Data Storytelling"]
   }
 ];
 
 export const quickCapabilities = [
-  { label: "Statistical Programming", icon: FileSpreadsheet },
-  { label: "Clinical Data Review", icon: Beaker },
-  { label: "RWD Cohort Thinking", icon: Network }
+  { label: "R and SAS Survival Workflows", icon: FileSpreadsheet },
+  { label: "Oncology Endpoint Interpretation", icon: Beaker },
+  { label: "Executive Data Storytelling", icon: Network }
 ];

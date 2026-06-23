@@ -8,11 +8,13 @@ type PageHeaderProps = {
 
 export function PageHeader({ eyebrow, title, description }: PageHeaderProps) {
   return (
-    <section className="border-b border-slate-200 bg-white py-14 sm:py-16">
+    <section className="border-b border-ink/15 bg-panel-50/50 py-14 backdrop-blur-sm sm:py-16">
       <Container>
-        <p className="text-sm font-semibold uppercase tracking-[0.18em] text-clinical-600">{eyebrow}</p>
-        <h1 className="mt-4 max-w-3xl text-4xl font-semibold tracking-normal text-ink sm:text-5xl">{title}</h1>
-        <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-600">{description}</p>
+        <div className="glass-panel p-6 sm:p-8">
+          <p className="font-mono text-xs font-semibold uppercase tracking-[0.22em] text-clinical-700">{eyebrow}</p>
+          <h1 className="mt-4 max-w-4xl text-4xl font-semibold tracking-normal text-ink sm:text-5xl">{title}</h1>
+          <p className="mt-5 max-w-3xl text-lg leading-8 text-ink/68">{description}</p>
+        </div>
       </Container>
     </section>
   );

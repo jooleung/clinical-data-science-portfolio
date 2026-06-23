@@ -11,11 +11,62 @@ html {
 }
 
 body {
-  background: #ffffff;
-  color: #102033;
+  background:
+    linear-gradient(rgba(23, 33, 31, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(23, 33, 31, 0.035) 1px, transparent 1px),
+    #fbfbf7;
+  background-size: 28px 28px;
+  color: #17211f;
 }
 
 ::selection {
-  background: #dceef1;
-  color: #102033;
+  background: #d9efe6;
+  color: #17211f;
+}
+
+.module-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid #17211f;
+  background: #fbfbf7;
+  padding: 0.85rem 1rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #17211f;
+  box-shadow: 4px 4px 0 #d8d7c8;
+  transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
+}
+
+.module-button:hover {
+  background: #d9efe6;
+  box-shadow: 2px 2px 0 #d8d7c8;
+  transform: translate(2px, 2px);
+}
+
+.module-button-primary {
+  background: #176b5b;
+  color: #fbfbf7;
+  box-shadow: 4px 4px 0 #c7623a;
+}
+
+.module-button-primary:hover {
+  background: #0f4e44;
+}
+
+.glass-panel {
+  border: 1px solid rgba(23, 33, 31, 0.16);
+  background: rgba(251, 251, 247, 0.72);
+  box-shadow: 8px 8px 0 rgba(216, 215, 200, 0.85);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+.glass-tile {
+  border: 1px solid rgba(23, 33, 31, 0.14);
+  background: rgba(255, 255, 255, 0.58);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
 }

@@ -10,8 +10,8 @@ export const metadata = {
 
 const contactLinks = [
   { label: "Email", value: profile.email, href: `mailto:${profile.email}`, icon: Mail },
-  { label: "LinkedIn", value: "linkedin.com/in/your-profile", href: profile.linkedin, icon: Linkedin },
-  { label: "GitHub", value: "github.com/your-username", href: profile.github, icon: Github }
+  { label: "LinkedIn", value: "linkedin.com/in/jo-yaozu-liang", href: profile.linkedin, icon: Linkedin },
+  { label: "GitHub", value: "github.com/jooleung", href: profile.github, icon: Github }
 ];
 
 export default function ContactPage() {
@@ -19,10 +19,10 @@ export default function ContactPage() {
     <>
       <PageHeader
         eyebrow="Contact"
-        title="Open to clinical data science and biostatistics conversations."
-        description="For internship, research, clinical development, or data science opportunities, please reach out through email, LinkedIn, or GitHub."
+        title="Open to clinical data science, biostatistics, and oncology analytics conversations."
+        description="For internships, research, clinical development, or data science opportunities, please reach out through email, LinkedIn, or GitHub."
       />
-      <section className="bg-white py-14">
+      <section className="bg-panel-50/35 py-14">
         <Container className="grid gap-5 md:grid-cols-3">
           {contactLinks.map((link) => {
             const Icon = link.icon;
@@ -30,13 +30,13 @@ export default function ContactPage() {
               <a
                 key={link.label}
                 href={link.href}
-                className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-soft"
+                className="glass-panel p-6 transition-transform hover:-translate-y-1"
               >
-                <span className="flex h-11 w-11 items-center justify-center rounded-md bg-clinical-50 text-clinical-700">
+                <span className="flex h-11 w-11 items-center justify-center border border-ink/15 bg-clinical-100 text-clinical-700">
                   <Icon className="h-5 w-5" />
                 </span>
                 <h2 className="mt-5 text-lg font-semibold text-ink">{link.label}</h2>
-                <p className="mt-2 break-words text-sm text-slate-600">{link.value}</p>
+                <p className="mt-2 break-words text-sm text-ink/65">{link.value}</p>
               </a>
             );
           })}

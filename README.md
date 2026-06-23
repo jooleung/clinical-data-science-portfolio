@@ -64,10 +64,10 @@ Update the following fields in `lib/site-data.ts`:
 - project report links
 - experience details
 
-Replace the resume placeholder:
+Current resume file:
 
 ```text
-public/resume/resume-placeholder.pdf
+public/resume/Y_Liang_Rusume_June26_JnJ.pdf
 ```
 
 You can either keep the same filename or upload your actual resume as:

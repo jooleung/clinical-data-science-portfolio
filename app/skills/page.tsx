@@ -12,25 +12,25 @@ export default function SkillsPage() {
     <>
       <PageHeader
         eyebrow="Skills"
-        title="Technical and clinical research toolkit."
-        description="A focused skills overview for biostatistics, clinical trials, real-world data, programming, and visualization roles."
+        title="Statistical, clinical, programming, and communication toolkit."
+        description="A focused overview of methods and tools used across oncology endpoint interpretation, statistical programming, reporting, and data storytelling."
       />
-      <section className="bg-slate-50 py-14">
+      <section className="bg-panel-50/35 py-14">
         <Container>
           <div className="grid gap-6 md:grid-cols-2">
             {skillGroups.map((group) => {
               const Icon = group.icon;
               return (
-                <article key={group.title} className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
+                <article key={group.title} className="glass-panel p-6">
                   <div className="flex items-center gap-3">
-                    <span className="flex h-10 w-10 items-center justify-center rounded-md bg-clinical-50 text-clinical-700">
+                    <span className="flex h-10 w-10 items-center justify-center border border-ink/15 bg-clinical-100 text-clinical-700">
                       <Icon className="h-5 w-5" />
                     </span>
                     <h2 className="text-xl font-semibold text-ink">{group.title}</h2>
                   </div>
                   <div className="mt-5 flex flex-wrap gap-2">
                     {group.skills.map((skill) => (
-                      <span key={skill} className="rounded-md border border-slate-200 bg-slate-50 px-3 py-2 text-sm font-medium text-slate-700">
+                      <span key={skill} className="glass-tile px-3 py-2 font-mono text-xs font-semibold uppercase tracking-[0.08em] text-ink/72">
                         {skill}
                       </span>
                     ))}

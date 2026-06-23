@@ -1,15 +1,9 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { profile } from "@/lib/site-data";
-
-const inter = Inter({
-  subsets: ["latin"],
-  display: "swap"
-});
 
 export const metadata: Metadata = {
   title: {
@@ -44,7 +38,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} min-h-screen antialiased`}>
+      <body className="min-h-screen font-sans antialiased">
         <SiteHeader />
         <main>{children}</main>
         <SiteFooter />

@@ -12,21 +12,21 @@ export default function AboutPage() {
     <>
       <PageHeader
         eyebrow="About Me"
-        title="Quantitative biology training with a clinical data science direction."
-        description="I am building a profile at the intersection of biomedical science, statistical analysis, and data-driven clinical development."
+        title="Quantitative biology training, clinical trial statistics, and applied data science."
+        description="A profile built around oncology endpoints, survival methods, reproducible analysis, and communication across biomedical and data teams."
       />
-      <section className="bg-white py-14">
+      <section className="bg-panel-50/35 py-14">
         <Container className="grid gap-8 lg:grid-cols-[0.85fr_1.15fr]">
-          <aside className="rounded-lg border border-slate-200 bg-slate-50 p-6">
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-clinical-600">Profile</p>
+          <aside className="glass-panel p-6">
+            <p className="font-mono text-xs font-semibold uppercase tracking-[0.22em] text-clinical-700">Profile</p>
             <h2 className="mt-4 text-2xl font-semibold text-ink">{profile.name}</h2>
-            <p className="mt-3 text-sm leading-6 text-slate-600">
-              University of Toronto undergraduate student majoring in Quantitative Biology with Genome Biology and
-              Applied Data Science training.
+            <p className="mt-3 text-sm leading-6 text-ink/68">
+              University of Toronto HBSc candidate in Quantitative Biology, Genome Biology, and Applied Data Science,
+              with prior study through Berkeley Global Access.
             </p>
             <div className="mt-6 flex flex-wrap gap-2">
               {focusAreas.map((area) => (
-                <span key={area} className="rounded-md bg-white px-2.5 py-1 text-xs font-medium text-slate-700 ring-1 ring-slate-200">
+                <span key={area} className="border border-ink/15 bg-white/50 px-2.5 py-1 font-mono text-[0.68rem] font-semibold uppercase tracking-[0.08em] text-ink/70">
                   {area}
                 </span>
               ))}
@@ -34,9 +34,9 @@ export default function AboutPage() {
           </aside>
           <div className="grid gap-4 sm:grid-cols-2">
             {aboutHighlights.map((item) => (
-              <article key={item.title} className="rounded-lg border border-slate-200 bg-white p-6">
+              <article key={item.title} className="glass-tile p-6">
                 <h3 className="text-lg font-semibold text-ink">{item.title}</h3>
-                <p className="mt-3 text-sm leading-6 text-slate-600">{item.body}</p>
+                <p className="mt-3 text-sm leading-6 text-ink/68">{item.body}</p>
               </article>
             ))}
           </div>

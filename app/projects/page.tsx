@@ -13,10 +13,10 @@ export default function ProjectsPage() {
     <>
       <PageHeader
         eyebrow="Projects"
-        title="Project areas for clinical trial and real-world evidence analytics."
-        description="Each project card is ready for a GitHub repository, PDF report, short summary, tags, and image asset."
+        title="Modular project spaces for survival analysis and clinical trial analytics."
+        description="Each project card is prepared for a GitHub repository, PDF report, short methods summary, and visual output."
       />
-      <section className="bg-white py-14">
+      <section className="bg-panel-50/35 py-14">
         <Container>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {projects.map((project) => (
