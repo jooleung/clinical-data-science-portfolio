@@ -1,30 +1,42 @@
-import { PageHeader } from "@/components/page-header";
-import { Container } from "@/components/container";
-import { ProjectCard } from "@/components/project-card";
+import { CrtShell } from "@/components/crt-shell";
 import { projects } from "@/lib/site-data";
 
 export const metadata = {
   title: "Projects",
-  description: "Portfolio project placeholders for survival analysis, Kaplan-Meier analysis, Cox regression, SAP development, clinical trial analytics, and real-world data studies."
+  description:
+    "Portfolio project placeholders for survival analysis, Kaplan-Meier analysis, Cox regression, SAP development, clinical trial analytics, and real-world data studies."
 };
 
 export default function ProjectsPage() {
   return (
-    <>
-      <PageHeader
-        eyebrow="Projects"
-        title="Modular project spaces for survival analysis and clinical trial analytics."
-        description="Each project card is prepared for a GitHub repository, PDF report, short methods summary, and visual output."
-      />
-      <section className="bg-panel-50/35 py-14">
-        <Container>
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {projects.map((project) => (
-              <ProjectCard key={project.title} project={project} />
-            ))}
-          </div>
-        </Container>
-      </section>
-    </>
+    <CrtShell title="Projects" compact>
+      <div className="crt-page-panel">
+        <h1 className="crt-page-title">Project Files</h1>
+        <p className="crt-page-copy">Clinical trial analytics and real-world evidence modules prepared for reports and repositories.</p>
+        <div className="crt-grid crt-grid-2">
+          {projects.map((project) => (
+            <article key={project.title} className="crt-card">
+              <h2>{project.title}</h2>
+              <p>{project.summary}</p>
+              <div className="crt-pill-list crt-pill-list-left">
+                {project.tags.map((tag) => (
+                  <span key={tag} className="crt-pill">
+                    {tag}
+                  </span>
+                ))}
+              </div>
+              <div className="mt-5 flex flex-wrap gap-3">
+                <a href={project.github} className="secondary-option">
+                  GitHub
+                </a>
+                <a href={project.report} className="secondary-option">
+                  PDF Report
+                </a>
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
+    </CrtShell>
   );
 }

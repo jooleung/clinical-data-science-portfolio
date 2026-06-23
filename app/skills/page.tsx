@@ -1,5 +1,4 @@
-import { PageHeader } from "@/components/page-header";
-import { Container } from "@/components/container";
+import { CrtShell } from "@/components/crt-shell";
 import { skillGroups } from "@/lib/site-data";
 
 export const metadata = {
@@ -9,38 +8,27 @@ export const metadata = {
 
 export default function SkillsPage() {
   return (
-    <>
-      <PageHeader
-        eyebrow="Skills"
-        title="Statistical, clinical, programming, and communication toolkit."
-        description="A focused overview of methods and tools used across oncology endpoint interpretation, statistical programming, reporting, and data storytelling."
-      />
-      <section className="bg-panel-50/35 py-14">
-        <Container>
-          <div className="grid gap-6 md:grid-cols-2">
-            {skillGroups.map((group) => {
-              const Icon = group.icon;
-              return (
-                <article key={group.title} className="pixel-panel p-6">
-                  <div className="flex items-center gap-3">
-                    <span className="flex h-10 w-10 items-center justify-center border border-ink/15 bg-clinical-100 text-clinical-700">
-                      <Icon className="h-5 w-5" />
-                    </span>
-                    <h2 className="text-xl font-semibold text-ink">{group.title}</h2>
-                  </div>
-                  <div className="mt-5 flex flex-wrap gap-2">
-                    {group.skills.map((skill) => (
-                      <span key={skill} className="glass-tile px-3 py-2 font-mono text-xs font-semibold uppercase tracking-[0.08em] text-ink/72">
-                        {skill}
-                      </span>
-                    ))}
-                  </div>
-                </article>
-              );
-            })}
-          </div>
-        </Container>
-      </section>
-    </>
+    <CrtShell title="Skills" compact>
+      <div className="crt-page-panel">
+        <h1 className="crt-page-title">Skill Refinement</h1>
+        <p className="crt-page-copy">
+          Statistical, clinical research, programming, and visualization toolkit for clinical data science roles.
+        </p>
+        <div className="crt-grid crt-grid-2">
+          {skillGroups.map((group) => (
+            <article key={group.title} className="crt-card">
+              <h2>{group.title}</h2>
+              <div className="crt-pill-list crt-pill-list-left">
+                {group.skills.map((skill) => (
+                  <span key={skill} className="crt-pill">
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
+    </CrtShell>
   );
 }

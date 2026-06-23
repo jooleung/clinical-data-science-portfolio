@@ -25,8 +25,8 @@ export const profile = {
 };
 
 export const navItems = [
-  { href: "/", label: "Home", code: "MDR-00", description: "Landing console and profile boot sequence" },
-  { href: "/about", label: "About", code: "BIO-01", description: "Education, clinical interests, and profile summary" },
+  { href: "/", label: "Home", code: "MDR-00", description: "Personal website entry screen" },
+  { href: "/about", label: "Education", code: "EDU-01", description: "University of Toronto and Berkeley record" },
   { href: "/experience", label: "Experience", code: "EXP-02", description: "Clinical data science and analytics history" },
   { href: "/projects", label: "Projects", code: "PRJ-03", description: "Survival, SAP, trial analytics, and RWD modules" },
   { href: "/skills", label: "Skills", code: "SKL-04", description: "Statistics, programming, and visualization toolkit" },

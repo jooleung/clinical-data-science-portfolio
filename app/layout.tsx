@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import "./globals.css";
-import { SiteFooter } from "@/components/site-footer";
-import { SiteHeader } from "@/components/site-header";
+import { RetroCursor } from "@/components/retro-cursor";
 import { profile } from "@/lib/site-data";
 
 export const metadata: Metadata = {
@@ -39,9 +38,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="min-h-screen font-sans antialiased">
-        <SiteHeader />
         <main>{children}</main>
-        <SiteFooter />
+        <RetroCursor />
       </body>
     </html>
   );
