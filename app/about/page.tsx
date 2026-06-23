@@ -17,7 +17,7 @@ export default function AboutPage() {
       />
       <section className="bg-panel-50/35 py-14">
         <Container className="grid gap-8 lg:grid-cols-[0.85fr_1.15fr]">
-          <aside className="glass-panel p-6">
+          <aside className="pixel-panel p-6">
             <p className="font-mono text-xs font-semibold uppercase tracking-[0.22em] text-clinical-700">Profile</p>
             <h2 className="mt-4 text-2xl font-semibold text-ink">{profile.name}</h2>
             <p className="mt-3 text-sm leading-6 text-ink/68">
@@ -34,7 +34,7 @@ export default function AboutPage() {
           </aside>
           <div className="grid gap-4 sm:grid-cols-2">
             {aboutHighlights.map((item) => (
-              <article key={item.title} className="glass-tile p-6">
+              <article key={item.title} className="pixel-panel p-6">
                 <h3 className="text-lg font-semibold text-ink">{item.title}</h3>
                 <p className="mt-3 text-sm leading-6 text-ink/68">{item.body}</p>
               </article>

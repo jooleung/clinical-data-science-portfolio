@@ -21,7 +21,7 @@ export default function SkillsPage() {
             {skillGroups.map((group) => {
               const Icon = group.icon;
               return (
-                <article key={group.title} className="glass-panel p-6">
+                <article key={group.title} className="pixel-panel p-6">
                   <div className="flex items-center gap-3">
                     <span className="flex h-10 w-10 items-center justify-center border border-ink/15 bg-clinical-100 text-clinical-700">
                       <Icon className="h-5 w-5" />

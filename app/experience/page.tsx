@@ -21,7 +21,7 @@ export default function ExperiencePage() {
             {experiences.map((experience) => {
               const Icon = experience.icon;
               return (
-                <article key={experience.title} className="glass-panel p-6">
+                <article key={experience.title} className="pixel-panel p-6">
                   <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
                     <div className="flex gap-4">
                       <span className="flex h-11 w-11 shrink-0 items-center justify-center border border-ink/15 bg-clinical-100 text-clinical-700">

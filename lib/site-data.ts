@@ -25,12 +25,12 @@ export const profile = {
 };
 
 export const navItems = [
-  { href: "/", label: "Home" },
-  { href: "/about", label: "About" },
-  { href: "/experience", label: "Experience" },
-  { href: "/projects", label: "Projects" },
-  { href: "/skills", label: "Skills" },
-  { href: "/contact", label: "Contact" }
+  { href: "/", label: "Home", code: "MDR-00", description: "Landing console and profile boot sequence" },
+  { href: "/about", label: "About", code: "BIO-01", description: "Education, clinical interests, and profile summary" },
+  { href: "/experience", label: "Experience", code: "EXP-02", description: "Clinical data science and analytics history" },
+  { href: "/projects", label: "Projects", code: "PRJ-03", description: "Survival, SAP, trial analytics, and RWD modules" },
+  { href: "/skills", label: "Skills", code: "SKL-04", description: "Statistics, programming, and visualization toolkit" },
+  { href: "/contact", label: "Contact", code: "CNT-05", description: "Email, LinkedIn, GitHub, and resume access" }
 ];
 
 export const focusAreas = [

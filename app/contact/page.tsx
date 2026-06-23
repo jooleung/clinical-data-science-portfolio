@@ -30,7 +30,7 @@ export default function ContactPage() {
               <a
                 key={link.label}
                 href={link.href}
-                className="glass-panel p-6 transition-transform hover:-translate-y-1"
+                className="pixel-panel p-6 transition-transform hover:-translate-y-1"
               >
                 <span className="flex h-11 w-11 items-center justify-center border border-ink/15 bg-clinical-100 text-clinical-700">
                   <Icon className="h-5 w-5" />
