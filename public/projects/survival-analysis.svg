@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Survival analysis curve visual</title>
+  <desc id="desc">Clinical survival analysis chart with time-to-event step curves.</desc>
+  <rect width="1200" height="675" fill="#f7f7fb"/>
+  <rect x="95" y="80" width="1010" height="500" rx="10" fill="#ffffff" stroke="#d7dce7"/>
+  <line x1="170" y1="505" x2="1010" y2="505" stroke="#9aa6b8" stroke-width="3"/>
+  <line x1="170" y1="505" x2="170" y2="145" stroke="#9aa6b8" stroke-width="3"/>
+  <path d="M170 185 H270 V230 H365 V280 H475 V330 H610 V380 H760 V430 H915 V468 H1010" fill="none" stroke="#287c8e" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M170 210 H250 V260 H340 V310 H450 V365 H585 V425 H735 V465 H900 V490 H1010" fill="none" stroke="#2f8f6b" stroke-width="8" stroke-linejoin="round"/>
+  <g fill="#102033" font-family="Arial, sans-serif">
+    <text x="170" y="625" font-size="32" font-weight="700">Survival Analysis</text>
+    <text x="170" y="115" font-size="22">Probability of survival</text>
+    <text x="850" y="548" font-size="22">Time</text>
+  </g>
+</svg>

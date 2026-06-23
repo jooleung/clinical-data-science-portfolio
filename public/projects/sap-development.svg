@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Statistical analysis plan visual</title>
+  <desc id="desc">Structured SAP document layout with endpoint and analysis sections.</desc>
+  <rect width="1200" height="675" fill="#f7f7fb"/>
+  <rect x="155" y="65" width="890" height="545" rx="12" fill="#ffffff" stroke="#d7dce7"/>
+  <rect x="215" y="125" width="380" height="28" rx="4" fill="#102033"/>
+  <rect x="215" y="185" width="740" height="16" rx="3" fill="#d7dce7"/>
+  <rect x="215" y="225" width="660" height="16" rx="3" fill="#d7dce7"/>
+  <rect x="215" y="285" width="230" height="90" rx="8" fill="#dceef1"/>
+  <rect x="485" y="285" width="230" height="90" rx="8" fill="#e8eaf2"/>
+  <rect x="755" y="285" width="200" height="90" rx="8" fill="#e4f1eb"/>
+  <rect x="215" y="430" width="740" height="20" rx="3" fill="#287c8e"/>
+  <rect x="215" y="480" width="610" height="16" rx="3" fill="#d7dce7"/>
+  <g fill="#102033" font-family="Arial, sans-serif">
+    <text x="215" y="560" font-size="32" font-weight="700">SAP Development</text>
+    <text x="245" y="337" font-size="22">Endpoint</text>
+    <text x="515" y="337" font-size="22">Estimand</text>
+    <text x="790" y="337" font-size="22">Shells</text>
+  </g>
+</svg>

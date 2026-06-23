@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Clinical trial analytics dashboard visual</title>
+  <desc id="desc">Clinical trial dashboard with enrollment and data quality panels.</desc>
+  <rect width="1200" height="675" fill="#ffffff"/>
+  <rect x="85" y="75" width="1030" height="525" rx="12" fill="#f7f7fb" stroke="#d7dce7"/>
+  <rect x="135" y="125" width="280" height="160" rx="8" fill="#ffffff" stroke="#d7dce7"/>
+  <rect x="460" y="125" width="280" height="160" rx="8" fill="#ffffff" stroke="#d7dce7"/>
+  <rect x="785" y="125" width="280" height="160" rx="8" fill="#ffffff" stroke="#d7dce7"/>
+  <rect x="135" y="330" width="930" height="190" rx="8" fill="#ffffff" stroke="#d7dce7"/>
+  <path d="M180 465 L300 410 L420 440 L540 370 L660 395 L780 350 L940 385" fill="none" stroke="#287c8e" stroke-width="8"/>
+  <g fill="#2f8f6b">
+    <rect x="185" y="210" width="38" height="45" rx="4"/>
+    <rect x="245" y="185" width="38" height="70" rx="4"/>
+    <rect x="305" y="155" width="38" height="100" rx="4"/>
+    <circle cx="600" cy="205" r="50"/>
+    <circle cx="925" cy="205" r="50" fill="#4c5874"/>
+  </g>
+  <g fill="#102033" font-family="Arial, sans-serif">
+    <text x="135" y="570" font-size="32" font-weight="700">Clinical Trial Analytics</text>
+  </g>
+</svg>

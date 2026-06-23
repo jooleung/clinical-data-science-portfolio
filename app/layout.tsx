@@ -1,0 +1,54 @@
+import type { Metadata } from "next";
+import type { ReactNode } from "react";
+import { Inter } from "next/font/google";
+import "./globals.css";
+import { SiteFooter } from "@/components/site-footer";
+import { SiteHeader } from "@/components/site-header";
+import { profile } from "@/lib/site-data";
+
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap"
+});
+
+export const metadata: Metadata = {
+  title: {
+    default: `${profile.name} | Clinical Data Science Portfolio`,
+    template: `%s | ${profile.name}`
+  },
+  description:
+    "Portfolio for a University of Toronto quantitative biology student focused on clinical data science, biostatistics, clinical trials, survival analysis, oncology, and real-world data.",
+  keywords: [
+    "Clinical Data Science",
+    "Biostatistics",
+    "Clinical Trials",
+    "Survival Analysis",
+    "Oncology",
+    "Real-World Data",
+    "University of Toronto",
+    "Quantitative Biology"
+  ],
+  authors: [{ name: profile.name }],
+  openGraph: {
+    title: `${profile.name} | Clinical Data Science Portfolio`,
+    description:
+      "Clinical data science portfolio focused on biostatistics, clinical trials, survival analysis, oncology, and data-driven drug development.",
+    type: "website"
+  }
+};
+
+export default function RootLayout({
+  children
+}: Readonly<{
+  children: ReactNode;
+}>) {
+  return (
+    <html lang="en">
+      <body className={`${inter.className} min-h-screen antialiased`}>
+        <SiteHeader />
+        <main>{children}</main>
+        <SiteFooter />
+      </body>
+    </html>
+  );
+}
